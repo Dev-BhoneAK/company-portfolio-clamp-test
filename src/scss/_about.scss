@@ -1,0 +1,31 @@
+@import "./variables";
+#about {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: clamp(0rem, -1.4706rem + 5.8824vw, 2.5rem);
+  img {
+    object-fit: cover;
+    // width: clamp(375px, 50%, 45.25rem);
+    width: clamp(20rem, 50%, 45.25rem);
+    margin-right: clamp(0rem, -0.7353rem + 2.9412vw, 1.25rem);
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    width: clamp(20rem, 50vw, 35.25rem);
+    // max-width: clamp(20rem, 13.3824rem + 26.4706vw, 31.25rem);
+    i {
+      font-size: 5vw;
+      color: #7d7d7e;
+    }
+    i:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}

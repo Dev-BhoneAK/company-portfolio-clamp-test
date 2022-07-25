@@ -1,0 +1,17 @@
+@import "./variables";
+footer {
+  font-size: clamp(0.75rem, 0.6029rem + 0.5882vw, 1rem);
+  background-color: rgb(42, 38, 38);
+  color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, -1.4706rem + 5.8824vw, 2.5rem);
+  .social-container {
+    a {
+      margin-right: clamp(0.3125rem, -0.0551rem + 1.4706vw, 0.9375rem);
+      // margin-right: 5px;
+      color: $primaryColor;
+    }
+  }
+}

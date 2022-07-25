@@ -1,0 +1,43 @@
+@import "./variables";
+#contact {
+  padding: $sectionPadding;
+  background: #1e1c1c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    text-align: center;
+    color: $primaryColor;
+    margin-bottom: $sectionPadding;
+  }
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+      input {
+        padding: 10px 20px;
+        border-radius: 10px;
+        outline: none;
+        width: clamp(18.75rem, 11.3971rem + 29.4118vw, 31.25rem);
+      }
+      textarea {
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: clamp(18.75rem, 11.3971rem + 29.4118vw, 31.25rem);
+        outline: none;
+      }
+      input:focus,
+      textarea:focus {
+        border: 2px solid #e3e230;
+      }
+      input:last-child {
+        width: 100px;
+      }
+    }
+  }
+}
